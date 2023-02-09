@@ -10,5 +10,5 @@ print(f'Second list: {list_2}')
 
 set_1 = set(list_1)
 set_2 = set(list_2)
-result = set_1.intersection(set_2)
+result = sorted(set_1.intersection(set_2))
 print(f'Result: {result if len(result) > 0 else None}')
