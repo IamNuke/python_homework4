@@ -1,6 +1,10 @@
 import random
 
 n = int(input("Enter number of bushes >=3 :"))
+if n < 3:
+    print("Wrong parameter")
+    exit(0)
+
 list_1 = [random.randint(1, 100) for _ in range(n)]
 print(f'Quantity of berries on bushes: {list_1}')
 
